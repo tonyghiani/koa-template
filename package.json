@@ -1,15 +1,15 @@
 {
   "name": "koa-template",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Koa boilerplate template for create-koa-application.",
   "main": "index.js",
   "scripts": {
+    "check": "npm run format && npm run lint",
     "dev": "nodemon index.js",
-    "format": "prettier --write \"**/*.+(js|css|sass|yml|yaml|scss|json)\"",
+    "format": "prettier --write \"**/*.+(js|yml|yaml|json)\"",
     "lint": "eslint .",
-    "precommit": "npm run format && npm run lint",
     "start": "node index.js",
-    "test": "NODE_ENV=test mocha --colors --timeout 5000 './{,!(node_modules)/**}/*.test.js'"
+    "test": "NODE_ENV=test jest'"
   },
   "repository": {
     "type": "git",
@@ -37,9 +37,14 @@
   },
   "dependencies": {
     "@koa/cors": "2.2.3",
+    "dotenv": "8.0.0",
     "joi": "14.3.1",
     "koa": "2.7.0",
     "koa-bodyparser": "4.2.1",
-    "koa-router": "7.4.0"
+    "koa-compress": "3.0.0",
+    "koa-helmet": "4.1.0",
+    "koa-logger": "3.2.0",
+    "koa-router": "7.4.0",
+    "uuid": "3.3.2"
   }
 }
