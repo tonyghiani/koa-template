@@ -1,6 +1,6 @@
 {
   "name": "koa-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Koa boilerplate template for create-koa-application.",
   "main": "index.js",
   "scripts": {
