@@ -40,7 +40,7 @@ exports.getAll = async ctx => {
 
 exports.createOne = async ctx => {
   const { name } = ctx.request.body;
-  ctx.assert(name, 400, 'The user info are malformed!');
+  ctx.assert(name, 400, 'The user info is malformed!');
   const id = generateId();
   const newUser = {
     id,
