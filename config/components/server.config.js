@@ -28,7 +28,7 @@ const config = {
   isDevelopment: envVars.NODE_ENV === 'development',
   server: {
     port: envVars.PORT || 3000,
-    apiVersion: envVars.API_VERSION || 'v1',
+    apiVersion: 'v'+envVars.API_VERSION || 'v1',
   },
 };
 
