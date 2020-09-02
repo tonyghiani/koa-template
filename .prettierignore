@@ -3,3 +3,6 @@ dist
 node_modules
 coverage
 build
+
+# Ignore package.json files to avoid prettier fights with yarn or npm
+package*.json
